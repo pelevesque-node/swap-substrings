@@ -32,7 +32,7 @@ https://www.npmjs.com/package/@pelevesque/swap-substrings
 const swapSubstrings = require('@pelevesque/swap-substrings')
 ```
 
-### Swap Two Substrings that are in the String
+### Swap Substrings
 
 ```js
 const str = 'bad bed led lad'
@@ -48,16 +48,7 @@ const result = swapSubstrings(str, swap)
 // result === 'cat treats for cats, dog treats for dogs'
 ```
 
-### Swap One Substring in the String with one that is not
-
-```js
-const str = 'I like hamsters'
-const swap = ['hamsters', 'squirrels']
-const result = swapSubstrings(str, swap)
-// result === 'I like squirrels'
-```
-
-### Many Swaps at Once
+### Swap Many Substring Pairs
 
 ```js
 const str = 'a fairly large man says oh oh oh to the bird'
@@ -69,4 +60,13 @@ const swap = [
 ]
 const result = swapSubstrings(str, swap)
 // result === 'the fairly small bird says tweet tweet tweet to a man'
+```
+
+### Substitute Substrings (Replacement is not in the String)
+
+```js
+const str = 'I like hamsters'
+const swap = ['hamsters', 'squirrels']
+const result = swapSubstrings(str, swap)
+// result === 'I like squirrels'
 ```
