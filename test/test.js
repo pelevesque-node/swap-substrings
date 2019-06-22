@@ -86,10 +86,10 @@ describe('#swapSubstrings()', () => {
   })
 
   it('should handle many substitution pairs', () => {
-    const str = 'a fairly large man says oh oh oh'
+    const str = 'a fairly large man says oh oh oh to the bird'
     const swap = [['a ', 'the '], ['man', 'bird'], ['large', 'small'], ['oh', 'tweet']]
     const result = swapSubstrings(str, swap)
-    const expected = 'the fairly small bird says tweet tweet tweet'
+    const expected = 'the fairly small bird says tweet tweet tweet to a man'
     expect(result).to.equal(expected)
   })
 
