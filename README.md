@@ -36,13 +36,15 @@ const swapSubstrings = require('@pelevesque/swap-substrings')
 
 ```js
 const str = 'bad bed led lad'
-const result = swapSubstrings(str, 'a', 'e')
+const swap = ['a', 'e']
+const result = swapSubstrings(str, swap)
 // result === 'bed bad lad led'
 ```
 
 ```js
 const str = 'dog treats for dogs, cat treats for cats'
-const result = swapSubstrings(str, 'dog', 'cat')
+const swap = ['dog', 'cat']
+const result = swapSubstrings(str, swap)
 // result === 'cat treats for cats, dog treats for dogs'
 ```
 
@@ -50,6 +52,21 @@ const result = swapSubstrings(str, 'dog', 'cat')
 
 ```js
 const str = 'I like hamsters'
-const result = swapSubstrings(str, 'hamsters', 'squirrels')
+const swap = ['hamsters', 'squirrels']
+const result = swapSubstrings(str, swap)
 // result === 'I like squirrels'
+```
+
+### Many Swaps at Once
+
+```js
+const str = 'a fairly large man says oh oh oh'
+const swap = [
+  ['a ', 'the '],
+  ['man', 'bird'],
+  ['large', 'small'],
+  ['oh', 'tweet']
+]
+const result = swapSubstrings(str, swap)
+// result === 'the fairly small bird says tweet tweet tweet'
 ```
