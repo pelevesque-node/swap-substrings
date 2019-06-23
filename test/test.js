@@ -13,7 +13,7 @@ describe('#swapSubstrings()', () => {
     expect(result).to.equal(expected)
   })
 
-  it('should make no changes if swap is an empty array', () => {
+  it('should make no changes if swaps is an empty array', () => {
     const str = '12345'
     const swaps = []
     const result = swapSubstrings(str, swaps)
